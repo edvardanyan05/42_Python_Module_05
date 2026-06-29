@@ -109,7 +109,7 @@ if __name__ == "__main__":
     print("Testing Numeric Processor...")
     num = NumericProcessor()
     print(f"Trying to validate input '42': {num.validate(42)}")
-    print(f"Trying to validate input 'Hello': {num.validate("Hello")}")
+    print(f"Trying to validate input 'Hello': {num.validate('Hello')}")
     try:
         print("Test invalid ingestion of string "
               "'foo' without prior validation:")
@@ -139,7 +139,7 @@ if __name__ == "__main__":
 
     print("Testing Log Processor...")
     log = LogProcessor()
-    print(f"Trying to validate input 'Hello': {log.validate("Hello")}")
+    print(f"Trying to validate input 'Hello': {log.validate('Hello')}")
     log_list = [{'log_level': 'NOTICE', 'log_message': 'Connection to server'},
                 {'log_level': 'ERROR', 'log_message': 'Unauthorized access!!'}
                 ]
